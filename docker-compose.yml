@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  update-service:
+    build: .
+    ports:
+      - "3003:3003"
+    environment:
+      - JWT_SECRET=your_jwt_secret
